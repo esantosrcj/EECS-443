@@ -1,0 +1,387 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Wed Mar 25 11:27:10 2015
+# Process ID: 8004
+# Log file: H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.runs/synth_1/TopLevel.vds
+# Journal file: H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopLevel.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_property target_language Verilog [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# read_vhdl -library xil_defaultlib {
+#   H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/EventGen.vhd
+#   H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Count32.vhd
+#   H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU_Slice.vhd
+#   H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/imports/project_4/memutils.vhd
+#   H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/RegFile.vhd
+#   H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Holder.vhd
+#   H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Delay.vhd
+#   H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU.vhd
+#   H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Allocator.vhd
+#   H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/TopLevel.vhd
+# }
+# read_xdc H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/constrs_1/imports/project_6/Nexys4_Master.xdc
+# set_property used_in_implementation false [get_files H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/constrs_1/imports/project_6/Nexys4_Master.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.cache/wt [current_project]
+# set_property parent.project_dir H:/School/Spring2015/EECS443/project_6/proj_6 [current_project]
+# catch { write_hwdef -file TopLevel.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top TopLevel -part xc7a100tcsg324-1
+Command: synth_design -top TopLevel -part xc7a100tcsg324-1
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 230.938 ; gain = 97.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/TopLevel.vhd:44]
+INFO: [Synth 8-3491] module 'Delay' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Delay.vhd:34' bound to instance 'D1' of component 'Delay' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/TopLevel.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'Delay' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Delay.vhd:40]
+INFO: [Synth 8-3491] module 'Count32' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Count32.vhd:34' bound to instance 'Count' of component 'Count32' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Delay.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'Count32' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Count32.vhd:39]
+INFO: [Synth 8-4471] merging register 'CountValue_reg[32:1]' into 'X_reg[32:1]' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Count32.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Count32' (1#1) [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Count32.vhd:39]
+INFO: [Synth 8-3491] module 'EventGen' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/EventGen.vhd:34' bound to instance 'Evnt' of component 'EventGen' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Delay.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'EventGen' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/EventGen.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'EventGen' (2#1) [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/EventGen.vhd:39]
+WARNING: [Synth 8-614] signal 'Evnts' is read in the process but is not in the sensitivity list [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Delay.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'Delay' (3#1) [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Delay.vhd:40]
+INFO: [Synth 8-3491] module 'Delay' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Delay.vhd:34' bound to instance 'D2' of component 'Delay' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/TopLevel.vhd:119]
+INFO: [Synth 8-3491] module 'RegFile' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/RegFile.vhd:55' bound to instance 'Reg' of component 'RegFile' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/TopLevel.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/RegFile.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (4#1) [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/RegFile.vhd:66]
+INFO: [Synth 8-3491] module 'Allocator' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Allocator.vhd:35' bound to instance 'Allo' of component 'Allocator' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/TopLevel.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'Allocator' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Allocator.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'Allocator' (5#1) [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Allocator.vhd:51]
+INFO: [Synth 8-3491] module 'ALU' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU.vhd:34' bound to instance 'ALUcomp' of component 'ALU' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/TopLevel.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'ALU' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU.vhd:41]
+INFO: [Synth 8-3491] module 'ALU_Slice' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU_Slice.vhd:34' bound to instance 'ALU0' of component 'ALU_Slice' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'ALU_Slice' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU_Slice.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ALU_Slice' (6#1) [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU_Slice.vhd:41]
+INFO: [Synth 8-3491] module 'ALU_Slice' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU_Slice.vhd:34' bound to instance 'ALU1' of component 'ALU_Slice' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU.vhd:53]
+INFO: [Synth 8-3491] module 'ALU_Slice' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU_Slice.vhd:34' bound to instance 'ALU2' of component 'ALU_Slice' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU.vhd:54]
+INFO: [Synth 8-3491] module 'ALU_Slice' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU_Slice.vhd:34' bound to instance 'ALU3' of component 'ALU_Slice' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU.vhd:55]
+INFO: [Synth 8-3491] module 'ALU_Slice' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU_Slice.vhd:34' bound to instance 'ALU4' of component 'ALU_Slice' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU.vhd:56]
+INFO: [Synth 8-3491] module 'ALU_Slice' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU_Slice.vhd:34' bound to instance 'ALU5' of component 'ALU_Slice' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU.vhd:57]
+INFO: [Synth 8-3491] module 'ALU_Slice' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU_Slice.vhd:34' bound to instance 'ALU6' of component 'ALU_Slice' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU.vhd:58]
+INFO: [Synth 8-3491] module 'ALU_Slice' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU_Slice.vhd:34' bound to instance 'ALU7' of component 'ALU_Slice' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (7#1) [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU.vhd:41]
+INFO: [Synth 8-3491] module 'Holder' declared at 'H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Holder.vhd:34' bound to instance 'Hold' of component 'Holder' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/TopLevel.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'Holder' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Holder.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Holder' (8#1) [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/Holder.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (9#1) [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/TopLevel.vhd:44]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PBtop[4]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PBtop[3]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PBtop[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 264.813 ; gain = 131.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+
+Processing XDC Constraints
+Parsing XDC File [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/constrs_1/imports/project_6/Nexys4_Master.xdc]
+Finished Parsing XDC File [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/constrs_1/imports/project_6/Nexys4_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 474.129 ; gain = 340.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 474.129 ; gain = 340.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 474.129 ; gain = 340.891
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [H:/School/Spring2015/EECS443/project_6/proj_6/proj_6.srcs/sources_1/new/ALU_Slice.vhd:49]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 62    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TopLevel 
+Detailed RTL Component Info : 
+Module Count32 
+Detailed RTL Component Info : 
+Module EventGen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 31    
+Module Delay 
+Detailed RTL Component Info : 
+Module RegFile 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 9     
+Module Allocator 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module ALU_Slice 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
+Module Holder 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 474.129 ; gain = 340.891
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PBtop[4]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PBtop[3]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PBtop[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 474.129 ; gain = 340.891
+---------------------------------------------------------------------------------
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 474.129 ; gain = 340.891
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++------------+----------------+--------------------+----------------------+--------------+-------------------+
+|Module Name | RTL Object     | Inference Criteria | Size (depth X width) | Primitives   | Hierarchical Name | 
++------------+----------------+--------------------+----------------------+--------------+-------------------+
+|TopLevel    | Reg/RegMem_reg | Implied            | 16 X 8               | RAM32M x 4   | TopLevel/ram__1   | 
++------------+----------------+--------------------+----------------------+--------------+-------------------+
+
+Note: The table shows RAMs generated at current stage. Some RAM generation could be reversed due to later optimizations. Mutiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\ALUcomp/ALU0/temp_reg ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\ALUcomp/ALU1/temp_reg ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\ALUcomp/ALU2/temp_reg ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\ALUcomp/ALU3/temp_reg ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\ALUcomp/ALU4/temp_reg ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\ALUcomp/ALU5/temp_reg ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\ALUcomp/ALU6/temp_reg ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\ALUcomp/ALU7/temp_reg ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\D1/Count/X_reg[21] ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\D1/Count/X_reg[22] ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\D1/Count/X_reg[23] ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\D1/Count/X_reg[24] ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\D1/Count/X_reg[25] ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\D1/Count/X_reg[26] ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\D1/Count/X_reg[27] ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\D1/Count/X_reg[28] ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\D1/Count/X_reg[29] ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\D1/Count/X_reg[30] ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\D1/Count/X_reg[31] ) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\D1/Count/X_reg[32] ) is unused and will be removed from module TopLevel.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 497.094 ; gain = 363.855
+---------------------------------------------------------------------------------
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 497.094 ; gain = 363.855
+Finished Parallel Section  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 497.094 ; gain = 363.855
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 546.223 ; gain = 412.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 546.223 ; gain = 412.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 556.809 ; gain = 423.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 556.809 ; gain = 423.570
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 556.809 ; gain = 423.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 556.809 ; gain = 423.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |    20|
+|4     |LUT2   |     2|
+|5     |LUT4   |    10|
+|6     |LUT6   |     4|
+|7     |RAM32M |     4|
+|8     |FDRE   |    67|
+|9     |IBUF   |    19|
+|10    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+----------+------+
+|      |Instance  |Module    |Cells |
++------+----------+----------+------+
+|1     |top       |          |   140|
+|2     |  Allo    |Allocator |    31|
+|3     |  D1      |Delay     |    53|
+|4     |    Count |Count32   |    53|
+|5     |  Hold    |Holder    |     8|
+|6     |  Reg     |RegFile   |    20|
++------+----------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 556.809 ; gain = 423.570
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 556.809 ; gain = 423.570
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 557.770 ; gain = 377.324
+# write_checkpoint TopLevel.dcp
+# report_utilization -file TopLevel_utilization_synth.rpt -pb TopLevel_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 557.770 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 25 11:27:42 2015...
