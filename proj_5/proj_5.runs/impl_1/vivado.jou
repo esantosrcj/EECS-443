@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sun Mar 08 19:19:39 2015
+# Process ID: 6396
+# Log file: H:/School/Spring2015/EECS443/project_5/proj_5/proj_5.runs/impl_1/Toplvl.vdi
+# Journal file: H:/School/Spring2015/EECS443/project_5/proj_5/proj_5.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Toplvl.tcl -notrace
