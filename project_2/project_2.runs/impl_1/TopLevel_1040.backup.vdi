@@ -1,0 +1,586 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Wed Feb 11 16:33:28 2015
+# Process ID: 4168
+# Log file: H:/Spring2015/EECS443/project_2/project_2/project_2.runs/impl_1/TopLevel.vdi
+# Journal file: H:/Spring2015/EECS443/project_2/project_2/project_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source TopLevel.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.2
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'M_Clock'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'M_Clock'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'M_Clock'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:10]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for create_clock constraint with option '-objects [get_ports M_Clock]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:10]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object.
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Red'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Red'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Green'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Green'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Blue'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Blue'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Red'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Red'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Green'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Green'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Blue'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Blue'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[0]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[0]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[1]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[1]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[2]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[2]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[3]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[3]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[4]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[4]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:149]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[5]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[5]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[6]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:154]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[6]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[7]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[7]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:159]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[0]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:162]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[0]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[1]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:165]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[1]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[2]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:168]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[2]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[3]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:171]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[3]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:172]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[4]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:174]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:174]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[4]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:175]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[5]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:177]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:177]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[5]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:178]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:178]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[6]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:180]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:180]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[6]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:181]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[7]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:183]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[7]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:184]
+WARNING: [Vivado 12-584] No ports matched 'BTN[4]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:193]
+WARNING: [Vivado 12-584] No ports matched 'BTN[4]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:194]
+WARNING: [Vivado 12-584] No ports matched 'BTN[2]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:196]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:196]
+WARNING: [Vivado 12-584] No ports matched 'BTN[2]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:197]
+WARNING: [Vivado 12-584] No ports matched 'BTN[3]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:199]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:199]
+WARNING: [Vivado 12-584] No ports matched 'BTN[3]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:200]
+WARNING: [Vivado 12-584] No ports matched 'BTN[0]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:202]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:202]
+WARNING: [Vivado 12-584] No ports matched 'BTN[0]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:203]
+WARNING: [Vivado 12-584] No ports matched 'BTN[1]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:205]
+WARNING: [Vivado 12-584] No ports matched 'BTN[1]'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:206]
+WARNING: [Vivado 12-584] No ports matched 'micClk'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:464]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:464]
+WARNING: [Vivado 12-584] No ports matched 'micClk'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:465]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:465]
+WARNING: [Vivado 12-584] No ports matched 'micData'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:467]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:467]
+WARNING: [Vivado 12-584] No ports matched 'micData'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:468]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:468]
+WARNING: [Vivado 12-584] No ports matched 'micLRSel'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:470]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:470]
+WARNING: [Vivado 12-584] No ports matched 'micLRSel'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:471]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:471]
+WARNING: [Vivado 12-584] No ports matched 'ampPWM'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:477]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:477]
+WARNING: [Vivado 12-584] No ports matched 'ampPWM'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:478]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:478]
+WARNING: [Vivado 12-584] No ports matched 'ampSD'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:480]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:480]
+WARNING: [Vivado 12-584] No ports matched 'ampSD'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:481]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:481]
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:490]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:490]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc:491]
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Finished Parsing XDC File [H:/Spring2015/EECS443/project_2/project_2/project_2.srcs/constrs_1/imports/example/Nexys4_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 443.461 ; gain = 256.672
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 445.102 ; gain = 1.059
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 23a5eab6b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 863.152 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 38 cells.
+Phase 2 Constant Propagation | Checksum: 209a9a0c3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 863.152 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 56 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 1 unconnected cells.
+Phase 3 Sweep | Checksum: 1bc7ca79a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 863.152 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1bc7ca79a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 863.152 ; gain = 0.000
+Implement Debug Cores | Checksum: 23a5eab6b
+Logic Optimization | Checksum: 23a5eab6b
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Will skip clock gating for clocks with period < 3.13 ns.
+Ending Power Optimization Task | Checksum: 1bc7ca79a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 863.152 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 100 Warnings, 101 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 863.152 ; gain = 419.691
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 863.152 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 15e848e34
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 863.152 ; gain = 0.000
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 863.152 ; gain = 0.000
+
+Phase 2.1.1 Mandatory Logic Optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 863.152 ; gain = 0.000
+Phase 2.1.1 Mandatory Logic Optimization | Checksum: ba264cac
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 863.152 ; gain = 0.000
+
+Phase 2.1.2 Build Super Logic Region (SLR) Database
+Phase 2.1.2 Build Super Logic Region (SLR) Database | Checksum: ba264cac
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 863.152 ; gain = 0.000
+
+Phase 2.1.3 Add Constraints
+Phase 2.1.3 Add Constraints | Checksum: ba264cac
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 863.152 ; gain = 0.000
+
+Phase 2.1.4 Build Shapes/ HD Config
+
+Phase 2.1.4.1 Build Macros
+Phase 2.1.4.1 Build Macros | Checksum: 16e9f4155
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 863.152 ; gain = 0.000
+Phase 2.1.4 Build Shapes/ HD Config | Checksum: 16e9f4155
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 863.152 ; gain = 0.000
+
+Phase 2.1.5 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.5.1 Pre-Place Cells
+Phase 2.1.5.1 Pre-Place Cells | Checksum: ba264cac
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 863.152 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.5.2 IO & Clk Clean Up
+Phase 2.1.5.2 IO & Clk Clean Up | Checksum: ba264cac
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.315 . Memory (MB): peak = 863.152 ; gain = 0.000
+
+Phase 2.1.5.3 Implementation Feasibility check On IDelay
+Phase 2.1.5.3 Implementation Feasibility check On IDelay | Checksum: ba264cac
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.315 . Memory (MB): peak = 863.234 ; gain = 0.082
+
+Phase 2.1.5.4 Commit IO Placement
+Phase 2.1.5.4 Commit IO Placement | Checksum: 56ee942e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.315 . Memory (MB): peak = 863.234 ; gain = 0.082
+Phase 2.1.5 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 10b6788d7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.330 . Memory (MB): peak = 863.234 ; gain = 0.082
+
+Phase 2.1.6 Build Placer Netlist Model
+
+Phase 2.1.6.1 Place Init Design
+Phase 2.1.6.1 Place Init Design | Checksum: 1c535a4eb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.346 . Memory (MB): peak = 863.234 ; gain = 0.082
+Phase 2.1.6 Build Placer Netlist Model | Checksum: 1c535a4eb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.346 . Memory (MB): peak = 863.234 ; gain = 0.082
+
+Phase 2.1.7 Constrain Clocks/Macros
+
+Phase 2.1.7.1 Constrain Global/Regional Clocks
+Phase 2.1.7.1 Constrain Global/Regional Clocks | Checksum: 1c535a4eb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.361 . Memory (MB): peak = 863.234 ; gain = 0.082
+Phase 2.1.7 Constrain Clocks/Macros | Checksum: 1c535a4eb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.361 . Memory (MB): peak = 863.234 ; gain = 0.082
+Phase 2.1 Placer Initialization Core | Checksum: 1c535a4eb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.377 . Memory (MB): peak = 863.234 ; gain = 0.082
+Phase 2 Placer Initialization | Checksum: 1c535a4eb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.377 . Memory (MB): peak = 863.234 ; gain = 0.082
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 1b8e74b06
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.658 . Memory (MB): peak = 864.184 ; gain = 1.031
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 1b8e74b06
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.658 . Memory (MB): peak = 864.184 ; gain = 1.031
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 15f89733b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.689 . Memory (MB): peak = 865.664 ; gain = 2.512
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 15f89733b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.705 . Memory (MB): peak = 865.680 ; gain = 2.527
+
+Phase 4.4 Commit Small Macros & Core Logic
+Phase 4.4 Commit Small Macros & Core Logic | Checksum: 15f89733b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.814 . Memory (MB): peak = 871.160 ; gain = 8.008
+
+Phase 4.5 Re-assign LUT pins
+Phase 4.5 Re-assign LUT pins | Checksum: 15f89733b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.829 . Memory (MB): peak = 871.160 ; gain = 8.008
+Phase 4 Detail Placement | Checksum: 15f89733b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.829 . Memory (MB): peak = 871.160 ; gain = 8.008
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 15f89733b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.845 . Memory (MB): peak = 871.160 ; gain = 8.008
+
+Phase 5.2 Post Placement Cleanup
+Phase 5.2 Post Placement Cleanup | Checksum: 15f89733b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.845 . Memory (MB): peak = 871.160 ; gain = 8.008
+
+Phase 5.3 Placer Reporting
+Phase 5.3 Placer Reporting | Checksum: 15f89733b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.861 . Memory (MB): peak = 871.160 ; gain = 8.008
+
+Phase 5.4 Final Placement Cleanup
+Phase 5.4 Final Placement Cleanup | Checksum: 15f89733b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.861 . Memory (MB): peak = 871.160 ; gain = 8.008
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 15f89733b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.876 . Memory (MB): peak = 871.160 ; gain = 8.008
+Ending Placer Task | Checksum: 14d6d02a0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.876 . Memory (MB): peak = 871.160 ; gain = 8.008
+INFO: [Common 17-83] Releasing license: Implementation
+29 Infos, 100 Warnings, 101 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 871.391 ; gain = 0.230
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 877.594 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Starting Route Task
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: e9ca10da
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1048.340 ; gain = 151.211
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: d859c123
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.191 ; gain = 159.063
+
+Phase 3 Initial Routing
+ Number of Nodes with overlaps = 0
+Phase 3 Initial Routing | Checksum: d1a6e6e0
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.191 ; gain = 159.063
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+Phase 4.1 Global Iteration 0 | Checksum: d1a6e6e0
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.191 ; gain = 159.063
+
+Phase 4.2 Global Iteration 1
+Phase 4.2 Global Iteration 1 | Checksum: d1a6e6e0
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.191 ; gain = 159.063
+
+Phase 4.3 Global Iteration 2
+Phase 4.3 Global Iteration 2 | Checksum: d1a6e6e0
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.191 ; gain = 159.063
+
+Phase 4.4 Global Iteration 3
+Phase 4.4 Global Iteration 3 | Checksum: d1a6e6e0
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.191 ; gain = 159.063
+
+Phase 4.5 Global Iteration 4
+Phase 4.5 Global Iteration 4 | Checksum: d1a6e6e0
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.191 ; gain = 159.063
+Phase 4 Rip-up And Reroute | Checksum: d1a6e6e0
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.191 ; gain = 159.063
+
+Phase 5 Post Hold Fix
+Phase 5 Post Hold Fix | Checksum: d1a6e6e0
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.191 ; gain = 159.063
+
+Phase 6 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00361231 %
+  Global Horizontal Routing Utilization  = 0.00142086 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 9.00901%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 6.30631%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 8.82353%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+Phase 6 Route finalize | Checksum: d1a6e6e0
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.191 ; gain = 159.063
+
+Phase 7 Verifying routed nets
+
+ Verification completed successfully
+Phase 7 Verifying routed nets | Checksum: d1a6e6e0
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.191 ; gain = 159.063
+
+Phase 8 Depositing Routes
+Phase 8 Depositing Routes | Checksum: ce3e6803
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.191 ; gain = 159.063
+INFO: [Route 35-16] Router Completed Successfully
+Ending Route Task | Checksum: ce3e6803
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.191 ; gain = 159.063
+
+Routing Is Done.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.191 ; gain = 159.063
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 100 Warnings, 101 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 1056.191 ; gain = 178.598
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 1056.191 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file H:/Spring2015/EECS443/project_2/project_2/project_2.runs/impl_1/TopLevel_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Constraints type: SDC.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Power 33-232] No user defined clocks was found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 11 16:35:03 2015...
