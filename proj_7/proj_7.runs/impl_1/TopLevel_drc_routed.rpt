@@ -1,0 +1,242 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Sun Mar 29 18:35:15 2015
+| Host         : 2002-15 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_drc
+-----------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+           Max violations: <unlimited>
+         Violations found: 35
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net ALUcomp/ALU0/n_0_Hout_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU0/Hout_reg_i_2/O, cell ALUcomp/ALU0/Hout_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net ALUcomp/ALU0/n_0_temp_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU0/temp_reg_i_2/O, cell ALUcomp/ALU0/temp_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net ALUcomp/ALU1/n_0_Hout_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU1/Hout_reg_i_2/O, cell ALUcomp/ALU1/Hout_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net ALUcomp/ALU1/n_0_temp_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU1/temp_reg_i_2/O, cell ALUcomp/ALU1/temp_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net ALUcomp/ALU2/n_0_Hout_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU2/Hout_reg_i_2/O, cell ALUcomp/ALU2/Hout_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net ALUcomp/ALU2/n_0_temp_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU2/temp_reg_i_2/O, cell ALUcomp/ALU2/temp_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net ALUcomp/ALU3/n_0_Hout_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU3/Hout_reg_i_2/O, cell ALUcomp/ALU3/Hout_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net ALUcomp/ALU3/n_0_temp_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU3/temp_reg_i_2/O, cell ALUcomp/ALU3/temp_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net ALUcomp/ALU4/n_0_Hout_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU4/Hout_reg_i_2/O, cell ALUcomp/ALU4/Hout_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net ALUcomp/ALU4/n_0_temp_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU4/temp_reg_i_2/O, cell ALUcomp/ALU4/temp_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net ALUcomp/ALU5/n_0_Hout_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU5/Hout_reg_i_2/O, cell ALUcomp/ALU5/Hout_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net ALUcomp/ALU5/n_0_temp_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU5/temp_reg_i_2/O, cell ALUcomp/ALU5/temp_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net ALUcomp/ALU6/n_0_Hout_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU6/Hout_reg_i_2/O, cell ALUcomp/ALU6/Hout_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net ALUcomp/ALU6/n_0_temp_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU6/temp_reg_i_2/O, cell ALUcomp/ALU6/temp_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net ALUcomp/ALU7/n_0_Hout_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU7/Hout_reg_i_2/O, cell ALUcomp/ALU7/Hout_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net ALUcomp/ALU7/n_0_temp_reg_i_2 is a gated clock net sourced by a combinational pin ALUcomp/ALU7/temp_reg_i_2/O, cell ALUcomp/ALU7/temp_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU0/Hout_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU0/Hout_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU0/temp_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU0/temp_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU1/Hout_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU1/Hout_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU1/temp_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU1/temp_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#5 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU2/Hout_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU2/Hout_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#6 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU2/temp_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU2/temp_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#7 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU3/Hout_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU3/Hout_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#8 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU3/temp_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU3/temp_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#9 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU4/Hout_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU4/Hout_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#10 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU4/temp_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU4/temp_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#11 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU5/Hout_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU5/Hout_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#12 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU5/temp_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU5/temp_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#13 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU6/Hout_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU6/Hout_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#14 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU6/temp_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU6/temp_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#15 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU7/Hout_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU7/Hout_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#16 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ALUcomp/ALU7/temp_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ALUcomp/ALU7/temp_reg {LDCE}
+
+Related violations: <none>
+
+PLIO-3#1 Warning
+Placement Constraints Check for IO constraints  
+Partially locked IO Bus is found. Following components of the IO Bus PBtop[4:0] are not locked:  PBtop[4] PBtop[3] PBtop[0]
+Related violations: <none>
+
+PLIO-7#1 Warning
+Placement Constraints Check for IO constraints  
+An IO Bus PBtop[4:0] with more than one IO standard is found. Components associated with this bus are:  PBtop[4] of IOStandard LVCMOS18; PBtop[3] of IOStandard LVCMOS18; PBtop[2] of IOStandard LVCMOS33; PBtop[1] of IOStandard LVCMOS33; PBtop[0] of IOStandard LVCMOS18;
+Related violations: <none>
+
+

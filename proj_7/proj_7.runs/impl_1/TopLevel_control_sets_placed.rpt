@@ -1,0 +1,74 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Sun Mar 29 18:34:44 2015
+| Host         : 2002-15 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file TopLevel_control_sets_placed.rpt
+| Design       : TopLevel
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    21 |
+| Minimum Number of register sites lost to control set restrictions |   127 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              73 |           31 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              32 |            9 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+------------------------------+------------------+------------------+----------------+
+|          Clock Signal          |         Enable Signal        | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------------------+------------------------------+------------------+------------------+----------------+
+|  ALUcomp/ALU7/n_0_temp_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU7/n_0_Hout_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU6/n_0_temp_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU6/n_0_Hout_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU5/n_0_temp_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU5/n_0_Hout_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU4/n_0_temp_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU4/n_0_Hout_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU3/n_0_temp_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU3/n_0_Hout_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU2/n_0_temp_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU2/n_0_Hout_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU1/n_0_temp_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU1/n_0_Hout_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU0/n_0_temp_reg_i_2 |                              |                  |                1 |              1 |
+|  ALUcomp/ALU0/n_0_Hout_reg_i_2 |                              |                  |                1 |              1 |
+|  Clocktop_IBUF_BUFG            | D1/OutPB                     |                  |                4 |              8 |
+|  Clocktop_IBUF_BUFG            | D2/OutPB                     |                  |                2 |             12 |
+|  Clocktop_IBUF_BUFG            | Allo/n_0_ReadAddrAOut[3]_i_1 |                  |                3 |             12 |
+|  Clocktop_IBUF_BUFG            | Allo/WriteENOut              |                  |                4 |             32 |
+|  Clocktop_IBUF_BUFG            |                              |                  |               15 |             57 |
++--------------------------------+------------------------------+------------------+------------------+----------------+
+
+
