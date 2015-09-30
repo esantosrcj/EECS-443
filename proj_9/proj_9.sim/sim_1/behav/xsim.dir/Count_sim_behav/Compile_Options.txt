@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "secureip" --snapshot "Count_sim_behav" --prj "H:/School/Spring2015/EECS443/project_9/proj_9/proj_9.sim/sim_1/behav/Count_sim.prj" "xil_defaultlib.Count_sim" 
