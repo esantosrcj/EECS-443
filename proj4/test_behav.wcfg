@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="mem_utils" />
+            <top_module name="test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject db_ref_id="1" fp_name="/test/clk_test" type="logic">
+      <obj_property name="ElementShortName">clk_test</obj_property>
+      <obj_property name="ObjectShortName">clk_test</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/write_test" type="logic">
+      <obj_property name="ElementShortName">write_test</obj_property>
+      <obj_property name="ObjectShortName">write_test</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/readAddA_test" type="array">
+      <obj_property name="ElementShortName">readAddA_test[3:0]</obj_property>
+      <obj_property name="ObjectShortName">readAddA_test[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/readAddB_test" type="array">
+      <obj_property name="ElementShortName">readAddB_test[3:0]</obj_property>
+      <obj_property name="ObjectShortName">readAddB_test[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/writeAdd_test" type="array">
+      <obj_property name="ElementShortName">writeAdd_test[3:0]</obj_property>
+      <obj_property name="ObjectShortName">writeAdd_test[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/readDataA_test" type="array">
+      <obj_property name="ElementShortName">readDataA_test[7:0]</obj_property>
+      <obj_property name="ObjectShortName">readDataA_test[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/readDataB_test" type="array">
+      <obj_property name="ElementShortName">readDataB_test[7:0]</obj_property>
+      <obj_property name="ObjectShortName">readDataB_test[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/writeData_test" type="array">
+      <obj_property name="ElementShortName">writeData_test[7:0]</obj_property>
+      <obj_property name="ObjectShortName">writeData_test[7:0]</obj_property>
+   </wvobject>
+</wave_config>
