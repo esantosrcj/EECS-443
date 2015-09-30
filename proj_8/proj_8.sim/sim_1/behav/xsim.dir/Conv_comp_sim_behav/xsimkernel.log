@@ -1,0 +1,5 @@
+Running: xsim.dir/Conv_comp_sim_behav/xsimk.exe -simmode gui -wdb Conv_comp_sim_behav.wdb -simrunnum 0 -socket 43038
+Design successfully loaded
+Design Loading CPU Usage: 93 ms
+Simulation completed
+Simulation CPU Usage: 93 ms

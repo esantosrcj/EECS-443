@@ -1,0 +1,345 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Wed Apr 15 15:55:07 2015
+# Process ID: 2472
+# Log file: H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.runs/synth_1/TopLevel.vds
+# Journal file: H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopLevel.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Labtools 27-147} -limit 4294967295
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_property target_language Verilog [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# read_vhdl -library xil_defaultlib {
+#   H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/imports/lab6sources/memutils.vhd
+#   H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/SUMRegister.vhd
+#   H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Accumulator.vhd
+#   H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/RegFile.vhd
+#   H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Multiplexer.vhd
+#   H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Convolutor.vhd
+#   H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/TopLevel.vhd
+#   H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/imports/project_9/simulation.vhd
+# }
+# read_xdc H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/constrs_1/new/Nexys4_Master.xdc
+# set_property used_in_implementation false [get_files H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/constrs_1/new/Nexys4_Master.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.cache/wt [current_project]
+# set_property parent.project_dir H:/School/Spring2015/EECS443/project_8/proj_8 [current_project]
+# catch { write_hwdef -file TopLevel.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top TopLevel -part xc7a100tcsg324-1
+Command: synth_design -top TopLevel -part xc7a100tcsg324-1
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 231.465 ; gain = 97.328
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/TopLevel.vhd:45]
+INFO: [Synth 8-3491] module 'RegFile' declared at 'H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/RegFile.vhd:35' bound to instance 'Reg' of component 'RegFile' [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/TopLevel.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/RegFile.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (1#1) [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/RegFile.vhd:48]
+INFO: [Synth 8-3491] module 'Convolutor' declared at 'H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Convolutor.vhd:36' bound to instance 'Conv' of component 'Convolutor' [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/TopLevel.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'Convolutor' [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Convolutor.vhd:47]
+INFO: [Synth 8-3491] module 'Accumulator' declared at 'H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Accumulator.vhd:35' bound to instance 'Acc' of component 'Accumulator' [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Convolutor.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'Accumulator' [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Accumulator.vhd:47]
+INFO: [Synth 8-4471] merging register 'Product_reg[15:0]' into 'ptemp_reg[15:0]' [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Accumulator.vhd:72]
+INFO: [Synth 8-4471] merging register 'SUM_reg[23:0]' into 'stemp_reg[23:0]' [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Accumulator.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'Accumulator' (2#1) [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Accumulator.vhd:47]
+INFO: [Synth 8-3491] module 'SUMRegister' declared at 'H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/SUMRegister.vhd:35' bound to instance 'Reg' of component 'SUMRegister' [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Convolutor.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'SUMRegister' [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/SUMRegister.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'SUMRegister' (3#1) [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/SUMRegister.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Convolutor' (4#1) [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Convolutor.vhd:47]
+INFO: [Synth 8-3491] module 'Multiplexer' declared at 'H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Multiplexer.vhd:34' bound to instance 'Mux' of component 'Multiplexer' [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/TopLevel.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer' [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Multiplexer.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer' (5#1) [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Multiplexer.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (6#1) [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/TopLevel.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 265.398 ; gain = 131.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+
+Processing XDC Constraints
+Parsing XDC File [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/constrs_1/new/Nexys4_Master.xdc]
+Finished Parsing XDC File [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/constrs_1/new/Nexys4_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 483.379 ; gain = 349.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 483.379 ; gain = 349.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 483.379 ; gain = 349.242
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'LEDout_reg' [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/Multiplexer.vhd:52]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
+	                8 Bit    Registers := 34    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 4     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 224   
+	   2 Input      5 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TopLevel 
+Detailed RTL Component Info : 
+Module RegFile 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 34    
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 224   
+	   2 Input      5 Bit        Muxes := 8     
+Module Accumulator 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module SUMRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+Module Convolutor 
+Detailed RTL Component Info : 
+Module Multiplexer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 486.988 ; gain = 352.852
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'Conv/Reg/PartSum_reg' and it is trimmed from '24' to '16' bits. [H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.srcs/sources_1/new/SUMRegister.vhd:50]
+DSP Report: Generating DSP Conv/Acc/ptemp_reg, operation Mode is: (A*B)'.
+DSP Report: register Conv/Acc/ptemp_reg is absorbed into DSP Conv/Acc/ptemp_reg.
+DSP Report: operator Conv/Acc/multOp is absorbed into DSP Conv/Acc/ptemp_reg.
+DSP Report: Generating DSP Conv/Acc/stemp_reg, operation Mode is: (P+A*B)'.
+DSP Report: register Conv/Acc/stemp_reg is absorbed into DSP Conv/Acc/stemp_reg.
+DSP Report: operator Conv/Acc/plusOp is absorbed into DSP Conv/Acc/stemp_reg.
+DSP Report: operator Conv/Acc/multOp is absorbed into DSP Conv/Acc/stemp_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 486.988 ; gain = 352.852
+---------------------------------------------------------------------------------
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 486.988 ; gain = 352.852
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++------------+----------+--------------+------------------+--------+--------+--------+--------+------+------+------+------+------+
+|Module Name | OP MODE  | Neg Edge Clk | A Size (Signed?) | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | PREG | 
++------------+----------+--------------+------------------+--------+--------+--------+--------+------+------+------+------+------+
+|Accumulator | (A*B)'   | No           | 8 (N)            | 8 (N)  | 48 (N) | 25 (N) | 16 (N) | 0    | 0    | 1    | 1    | 0    | 
+|Accumulator | (P+A*B)' | No           | 8 (N)            | 8 (N)  | 24 (N) | 25 (N) | 24 (N) | 0    | 0    | 1    | 1    | 1    | 
++------------+----------+--------------+------------------+--------+--------+--------+--------+------+------+------+------+------+
+
+Note: The table shows DSPs generated at current stage. Some DSP generation could be reversed due to later optimizations. Mutiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 516.594 ; gain = 382.457
+---------------------------------------------------------------------------------
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 516.594 ; gain = 382.457
+Finished Parallel Section  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 516.594 ; gain = 382.457
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 603.648 ; gain = 469.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 608.602 ; gain = 474.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 621.121 ; gain = 486.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 621.121 ; gain = 486.984
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 621.121 ; gain = 486.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 621.121 ; gain = 486.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |DSP48E1   |     1|
+|3     |DSP48E1_1 |     1|
+|4     |LUT2      |     1|
+|5     |LUT3      |     3|
+|6     |LUT4      |     8|
+|7     |LUT5      |   296|
+|8     |LUT6      |   144|
+|9     |MUXF7     |    64|
+|10    |FDRE      |   289|
+|11    |LD        |    16|
+|12    |IBUF      |    22|
+|13    |OBUF      |    16|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |   862|
+|2     |  Conv   |Convolutor  |    38|
+|3     |    Acc  |Accumulator |    14|
+|4     |    Reg  |SUMRegister |    24|
+|5     |  Mux    |Multiplexer |    17|
+|6     |  Reg    |RegFile     |   768|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 621.121 ; gain = 486.984
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 621.121 ; gain = 486.984
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LD => LDCE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 621.121 ; gain = 440.398
+# write_checkpoint TopLevel.dcp
+# report_utilization -file TopLevel_utilization_synth.rpt -pb TopLevel_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 621.121 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 15 15:55:47 2015...

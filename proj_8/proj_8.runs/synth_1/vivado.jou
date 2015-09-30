@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Wed Apr 15 15:55:07 2015
+# Process ID: 2472
+# Log file: H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.runs/synth_1/TopLevel.vds
+# Journal file: H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopLevel.tcl

@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "secureip" --snapshot "Conv_comp_sim_behav" --prj "H:/School/Spring2015/EECS443/project_8/proj_8/proj_8.sim/sim_1/behav/Conv_comp_sim.prj" "xil_defaultlib.Conv_comp_sim" 
